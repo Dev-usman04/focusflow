@@ -19,7 +19,7 @@ const TaskSection = ({
       bgColor: 'bg-blue-500/20',
       badgeColor: 'bg-blue-500/20 text-blue-300',
       emptyIcon: '📝',
-      emptyTitle: 'No active tasks',
+      emptyTitle: 'No active tasks registered',
       emptySubtitle: 'Add a task above to get started!'
     },
     completed: {
@@ -28,8 +28,8 @@ const TaskSection = ({
       bgColor: 'bg-green-500/20',
       badgeColor: 'bg-green-500/20 text-green-300',
       emptyIcon: '✅',
-      emptyTitle: 'No completed tasks yet',
-      emptySubtitle: 'Complete some tasks to see them here!'
+      emptyTitle: ' You have No completed tasks yet',
+      emptySubtitle: 'Complete some of your tasks to see them here!'
     }
   };
 

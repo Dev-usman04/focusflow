@@ -1,12 +1,94 @@
-# React + Vite
+# FocusFlow - Task Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FocusFlow is a modern, responsive task management application built with React and styled with Tailwind CSS. It provides an intuitive and visually appealing interface for managing daily tasks with advanced features and smooth animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Task Management**
+  - Create, complete, and delete tasks
+  - Priority marking system
+  - Separate sections for active and completed tasks
+  - Real-time task statistics tracking
 
-## Expanding the ESLint configuration
+- **User Interface**
+  - Modern, minimalist design
+  - Animated background with floating orbs
+  - Smooth transitions and animations
+  - Responsive layout for all devices
+  - Glass-morphism effect for components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Task Organization**
+  - Priority-based task sorting
+  - Timestamp tracking for creation and completion
+  - Progress tracking with completion percentage
+  - Task filtering system
+
+- **Accessibility**
+  - Reduced motion support
+  - High contrast mode compatibility
+  - Keyboard navigation
+  - Screen reader friendly
+
+## Technical Stack
+
+- **Frontend Framework**: React
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Animations**: Custom CSS animations
+- **State Management**: React Hooks
+- **Code Quality**: ESLint
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+```sh
+npm install
+```
+
+3. Run the development server:
+```sh
+npm run dev
+```
+
+4. Build for production:
+```sh
+npm run build
+```
+
+## Key Components
+
+- `TodoApp`: Main application container
+- `TaskInput`: New task creation interface
+- `TaskSection`: Manages task lists and empty states
+- `TodoItem`: Individual task component with actions
+- `StatsBar`: Displays task statistics
+- `AnimatedBackground`: Creates dynamic visual effects
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── AnimatedBackground.jsx
+│   ├── Header.jsx
+│   ├── StatsBar.jsx
+│   ├── TaskInput.jsx
+│   ├── TaskSection.jsx
+│   ├── TodoApp.jsx
+│   └── TodoItem.jsx
+├── utils/
+│   ├── dateUtils.js
+│   └── todoUtils.js
+└── styles/
+    └── animations.css
+```
+
+## License
+
+[Add your license information here]
+
+## Contributing
+
+[Add contribution guidelines here]

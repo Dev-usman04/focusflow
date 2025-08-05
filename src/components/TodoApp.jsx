@@ -11,7 +11,7 @@ const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  // function to Add a new todo
+  // function to Add a new todo 
   const addTodo = () => {
     if (inputValue.trim()) {
       const newTodo = {
@@ -38,14 +38,14 @@ const TodoApp = () => {
     ));
   };
 
-  // Toggle priority
+  // function to set Toggle priority
   const togglePriority = (id) => {
     setTodos(todos.map(todo => 
       todo.id === id ? { ...todo, priority: !todo.priority } : todo
     ));
   };
 
-  // Delete todo
+  // function to Delete todo
   const deleteTodo = (id) => {
     setTodos(todos.filter(todo => todo.id !== id));
   };
